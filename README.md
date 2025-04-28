@@ -17,19 +17,7 @@ Welcome to my portfolio! This project showcases my skills, projects, and journey
 - ![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white)
 - ![ShadCN](https://img.shields.io/badge/-ShadCN-5A0FC8?logo=tailwindcss&logoColor=white)
 - ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?logo=tailwindcss&logoColor=white)
-- ![Material-UI](https://img.shields.io/badge/-MUI-007FFF?logo=mui&logoColor=white)
 
-### Backend:
-
-- ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)
-- ![NestJS](https://img.shields.io/badge/-NestJS-E0234E?logo=nestjs&logoColor=white)
-- ![Hono.js](https://img.shields.io/badge/-Hono.js-FF7E00?logo=javascript&logoColor=white)
-
-### Databases:
-
-- ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white)
-- ![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?logo=firebase&logoColor=white)
-- ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white)
 
 ### Other Tools:
 
