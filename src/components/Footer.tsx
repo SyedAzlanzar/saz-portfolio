@@ -1,11 +1,11 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-transparent text-foreground py-20 pb-10 ">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex items-center gap-2 justify-center">
             <MapPin className="text-primary-custom " />
             <span> Karachi, Pakistan</span>
@@ -16,10 +16,7 @@ const Footer = () => {
               syedazlan.emcr@gmail.com
             </a>
           </div>
-          <div className="flex items-center gap-3 justify-center">
-            <Phone className="text-primary-custom" />
-            <a href="tel:+92 320 2905905">+92 320 2905905</a>
-          </div>
+         
         </div>
         <div className="mt-16 flex flex-col md:flex-row  gap-8 text-center items-center justify-between  font-extralight text-gray-300 ">
           <p className="text-sm">

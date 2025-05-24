@@ -14,20 +14,31 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["home", "about", "projects", "services", "contact"];
-      const currentSection = sections.find((section) => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
+   const handleScroll = () => {
+  const sections = ["home", "about", "projects", "services", "contact"];
+  let closestSection = "";
+  let minDistance = Infinity;
+
+  sections.forEach((section) => {
+    const element = document.getElementById(section);
+    if (element) {
+      const rect = element.getBoundingClientRect();
+
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        const distanceFromTop = Math.abs(rect.top);
+        if (distanceFromTop < minDistance) {
+          minDistance = distanceFromTop;
+          closestSection = section;
         }
-        return false;
-      });
-      if (currentSection) {
-        setActiveSection(currentSection);
       }
-    };
+    }
+  });
+
+  if (closestSection) {
+    setActiveSection(closestSection);
+  }
+};
+
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
