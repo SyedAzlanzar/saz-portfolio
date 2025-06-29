@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex items-center gap-2 justify-center">
             <MapPin className="text-primary-custom " />
-            <span> Karachi, Pakistan</span>
+            <span> Cottbus, Germany</span>
           </div>
           <div className="flex items-center gap-3 justify-center">
             <Mail className="text-primary-custom" />

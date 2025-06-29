@@ -36,28 +36,6 @@ export const projects: Project[] = [
     techStack: ["Next.js", "Nest.js", "MUI", "Typescript", "Axios"],
   },
   {
-    id: "BE7D8E9F",
-    name: "BidSync AI",
-    tagline:
-      "AI-powered bidding assistant for freelance success. Streamline proposals, track performance, and close more deals with ease.",
-    description:
-      "BidSync AI is a powerful browser extension designed to revolutionize the freelance bidding process on platforms like Upwork and Fiverr. Leveraging OpenAI's GPT-4 model, it generates tailored project proposals based on job descriptions, techstack requirements, and bidder inputs. The extension streamlines workflow by tracking applied and unapplied jobs, maintaining bid history, and facilitating seamless communication between sales team shifts. With its robust admin dashboard built on Next.js 14, React Query, Redux Toolkit, and Tailwind CSS, Bidding Expert AI provides comprehensive analytics and performance metrics, empowering sales teams to optimize their bidding strategies and boost success rates.",
-    image: "/assets/zen-ai-extension.png",
-    github: "https://github.com/SyedAzlanzar",
-    appearance: "Private",
-    videoUrl: "/assets/bidding.mp4",
-    techStack: [
-      "React.js",
-      "Vite",
-      "Shadcn",
-      "Typescript",
-      "Hono.js",
-      "Mongodb",
-      "Manifest 3",
-      "OpenAi API",
-    ],
-  },
-  {
     id: "EM1G2H3I",
     name: "Election Matching System",
     tagline:

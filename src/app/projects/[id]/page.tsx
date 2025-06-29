@@ -22,7 +22,7 @@ export default function ProjectDetails() {
     return <div>Project not found</div>;
   }
 
-  const routeBack = () => router.push("/");
+  const routeBack = () => router.back();
 
   return (
     <div className="container  mx-auto min-h-screen flex items-center justify-center">

@@ -27,15 +27,7 @@ const About = () => {
               <CardContent className="p-6">
                 <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
                 <p className="text-muted-foreground">
-                  Fullstack Engineer with a solid foundation in frontend
-                  development technologies such as React, Next.js, and
-                  Bootstrap, complemented by intermediate proficiency in backend
-                  technologies including Nest.js, Node.js with Express, and SQL
-                  and NoSQL databases. Leveraging expertise in both frontend and
-                  backend realms to develop scalable and responsive web
-                  applications that deliver seamless user experiences. Eager to
-                  contribute innovative solutions and collaborate with
-                  cross-functional teams to drive projects forward.
+                Fullstack Engineer with a strong foundation in frontend technologies such as React, Next.js, and Bootstrap, combined with intermediate proficiency in backend frameworks including Nest.js, Node.js with Express, and both SQL and NoSQL databases. Currently expanding my skill set by focusing on Python development, particularly exploring Python-based models, OpenAI APIs, and Large Language Models (LLMs) to build intelligent and context-aware applications. Passionate about delivering scalable, responsive web applications and seamless user experiences. Eager to contribute innovative solutions and collaborate with cross-functional teams to drive impactful projects forward.
                 </p>
               </CardContent>
             </Card>

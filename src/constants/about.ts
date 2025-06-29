@@ -7,11 +7,10 @@ import {
   DiPostgresql,
 } from "react-icons/di";
 import {
-  FaDiscord,
   FaEnvelope,
   FaGithub,
   FaLinkedin,
-  FaNodeJs,
+  FaNodeJs
 } from "react-icons/fa";
 import { GiFlame } from "react-icons/gi";
 import { GrReactjs } from "react-icons/gr";
@@ -34,12 +33,6 @@ export const techStack = [
     icon: FaEnvelope,
     username: "syedazlan.emcr@gmail.com",
     url: "mailto:syedazlan.emcr@gmail.com",
-    target: "_blank",
-  },
-  {
-    icon: FaDiscord,
-    username: "Azlan",
-    url: "https://discord.com/users/azlan0905",
     target: "_blank",
   },
 ];
