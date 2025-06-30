@@ -83,9 +83,9 @@ const Navbar = () => {
               )
             )}
           </div>
-          {/* <Link href={"/assets/resume.pdf"} target="_blank">
+          <Link href={"/assets/resume.pdf"} target="_blank">
             <Button variant="outline">View Resume</Button>
-          </Link> */}
+          </Link>
         </div>
       </motion.nav>
 
