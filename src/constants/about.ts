@@ -16,6 +16,9 @@ import { GiFlame } from "react-icons/gi";
 import { GrReactjs } from "react-icons/gr";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiMui, SiNestjs, SiShadcnui } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { MdExtension } from "react-icons/md";
+import { AiFillOpenAI } from "react-icons/ai";
 export const techStack = [
   {
     icon: FaLinkedin,
@@ -53,4 +56,7 @@ export const skills = [
   { name: "MUI", icon: SiMui },
   { name: "Shadcn", icon: SiShadcnui },
   { name: "Stripe", icon: BsStripe },
+  { name: "Python", icon: FaPython },
+  { name: "Chrome Extensions", icon: MdExtension },
+  { name: "OpenAI API", icon: AiFillOpenAI },
 ];

@@ -25,10 +25,9 @@ const CursorEffect = () => {
         x: mousePosition.x - 16,
         y: mousePosition.y - 16,
       }}
-      transition={{ type: "spring", stiffness: 550, damping: 28 }}
+      transition={{ type: "spring", bounce: 0.5, stiffness: 600, damping: 22, mass: 1 }}
     >
-      <div className="w-10 h-10 bg-[#00a890] rounded-full opacity-100 blur-3xl" />
-      <div className="w-4 h-4 bg-[#00a890] rounded-full absolute top-2 left-2" />
+      <div className="w-12 h-12 bg-[#00a890] rounded-full opacity-100 blur-[74px]" />
     </motion.div>
   );
 };

@@ -62,17 +62,4 @@ export const projects: Project[] = [
     videoUrl: "/assets/ybudget.webm",
     techStack: ["Next.js", "Shadcn", "Typescript", "Strapi"],
   },
-  {
-    id: "HI6434",
-    name: "Portfolio",
-    tagline: "Showcasing expertise with style and innovation.",
-    description:
-      "A modern and responsive portfolio built with Next.js 15, React 19, ShadCN for enhanced UI design, Tailwind CSS for styling, and TypeScript for type-safe development. This project highlights a seamless blend of cutting-edge technologies to deliver an elegant user experience.",
-    image: "/assets/portfolio-thumbnail.png",
-    github: "https://github.com/SyedAzlanzar",
-    demo: "https://saz-portfolio.vercel.app",
-    appearance: "Private",
-    videoUrl: "/assets/saz-portfolio.mp4",
-    techStack: ["Next.js", "Shadcn Ui", "Typescript", "Next 15", "React 19"],
-  },
 ];

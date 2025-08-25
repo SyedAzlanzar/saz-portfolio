@@ -7,38 +7,36 @@ import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
-import Logo from "../../public/assets/logo.png";
+import Logo from "../../public/assets/logo.svg";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const sections = ["home", "about", "projects", "contact"];
   useEffect(() => {
-   const handleScroll = () => {
-  const sections = ["home", "about", "projects", "services", "contact"];
-  let closestSection = "";
-  let minDistance = Infinity;
+    const handleScroll = () => {
+      let closestSection = "";
+      let minDistance = Infinity;
 
-  sections.forEach((section) => {
-    const element = document.getElementById(section);
-    if (element) {
-      const rect = element.getBoundingClientRect();
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
 
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        const distanceFromTop = Math.abs(rect.top);
-        if (distanceFromTop < minDistance) {
-          minDistance = distanceFromTop;
-          closestSection = section;
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            const distanceFromTop = Math.abs(rect.top);
+            if (distanceFromTop < minDistance) {
+              minDistance = distanceFromTop;
+              closestSection = section;
+            }
+          }
         }
+      });
+
+      if (closestSection) {
+        setActiveSection(closestSection);
       }
-    }
-  });
-
-  if (closestSection) {
-    setActiveSection(closestSection);
-  }
-};
-
+    };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -64,24 +62,25 @@ const Navbar = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-primary-custom h-8">
+          <Link
+            href="/"
+            className="text-2xl font-bold text-primary-custom h-8 scale-110"
+          >
             <Image alt="logo" src={Logo} className="h-full w-full" />
           </Link>
           <div className="space-x-4">
-            {["home", "about", "projects", "services", "contact"].map(
-              (section) => (
-                <Button
-                  key={section}
-                  variant="ghost"
-                  className={
-                    activeSection === section ? "text-primary-custom" : ""
-                  }
-                  onClick={() => scrollToSection(section)}
-                >
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                </Button>
-              )
-            )}
+            {sections.map((section) => (
+              <Button
+                key={section}
+                variant="ghost"
+                className={
+                  activeSection === section ? "text-primary-custom" : ""
+                }
+                onClick={() => scrollToSection(section)}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </Button>
+            ))}
           </div>
           <Link href={"/assets/resume.pdf"} target="_blank">
             <Button variant="outline">View Resume</Button>
@@ -112,23 +111,21 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="absolute top-16 left-0 right-0 bg-background/95 py-4 shadow-md">
             <ul className="flex flex-col items-center  space-y-4">
-              {["home", "about", "projects", "services", "contact"].map(
-                (section) => (
-                  <li key={section}>
-                    <button
-                      className={`text-lg ${
-                        activeSection === section ? "text-primary-custom" : ""
-                      }`}
-                      onClick={() => {
-                        scrollToSection(section);
-                        setIsMenuOpen(false);
-                      }}
-                    >
-                      {section.charAt(0).toUpperCase() + section.slice(1)}
-                    </button>
-                  </li>
-                )
-              )}
+              {sections.map((section) => (
+                <li key={section}>
+                  <button
+                    className={`text-lg ${
+                      activeSection === section ? "text-primary-custom" : ""
+                    }`}
+                    onClick={() => {
+                      scrollToSection(section);
+                      setIsMenuOpen(false);
+                    }}
+                  >
+                    {section.charAt(0).toUpperCase() + section.slice(1)}
+                  </button>
+                </li>
+              ))}
               <li>
                 <Link href={"/assets/resume.pdf"} target="_blank">
                   <Button variant="outline">View Resume</Button>
