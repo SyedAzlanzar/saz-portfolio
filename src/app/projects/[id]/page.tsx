@@ -22,7 +22,16 @@ export default function ProjectDetails() {
     return <div>Project not found</div>;
   }
 
-  const routeBack = () => router.replace("/");
+  // const routeBack = () => router.replace("/");
+  const safeBack = () => {
+    if (typeof window !== "undefined") {
+      if (window.history.length >2) {
+        router.back();
+      } else {
+        router.replace("/");
+      }
+    }
+  };
 
   return (
     <div className="container mx-auto min-h-screen py-4 flex md:items-center md:justify-center">
@@ -59,7 +68,7 @@ export default function ProjectDetails() {
           </p>
         </CardContent>
         <CardFooter className="flex justify-between  flex-wrap sm:flex-row flex-col-reverse items-center gap-4">
-          <Button variant="ghost" onClick={routeBack}>
+          <Button variant="ghost" onClick={safeBack}>
             Back
           </Button>
           <div className="flex justify-end gap-4">
