@@ -51,7 +51,7 @@ export default function ProjectDetails() {
             preload="auto"
             className="w-full aspect-video mb-4 rounded-lg"
           >
-            <source src="/assets/mov_bbb.mp4" type="video/mp4" />
+            <source src="/assets/VoterConnect-t.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <p className="text-muted-foreground md:max-h-auto overflow-y-auto">
