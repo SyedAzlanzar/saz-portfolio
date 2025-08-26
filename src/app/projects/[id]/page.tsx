@@ -25,8 +25,8 @@ export default function ProjectDetails() {
   const routeBack = () => router.replace("/");
 
   return (
-    <div className="container  mx-auto min-h-screen flex items-center justify-center">
-      <Card className="sm:w-full w-[350px] sm:max-w-3xl mx-auto">
+    <div className="container mx-auto min-h-screen py-4 flex md:items-center md:justify-center">
+      <Card className="sm:w-full w-[350px] sm:max-w-3xl mx-auto h-full">
         <CardHeader>
           <CardTitle className="mb-1 flex items-center gap-3 justify-between">
             <span className="text-2xl">{project.name}</span>
@@ -46,15 +46,19 @@ export default function ProjectDetails() {
           <video
             controls
             autoPlay
-            controlsList="nodownload"
-            src={project.videoUrl}
+            muted
+            playsInline
+            preload="auto"
             className="w-full aspect-video mb-4 rounded-lg"
-          />
-          <p className="text-muted-foreground md:max-h-auto max-h-56 pr-2 overflow-y-auto">
+          >
+            <source src="/assets/voterconnect.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p className="text-muted-foreground md:max-h-auto overflow-y-auto">
             {project.description}
           </p>
         </CardContent>
-        <CardFooter className="flex justify-between flex-wrap sm:flex-row flex-col-reverse items-center gap-4">
+        <CardFooter className="flex justify-between  flex-wrap sm:flex-row flex-col-reverse items-center gap-4">
           <Button variant="ghost" onClick={routeBack}>
             Back
           </Button>
