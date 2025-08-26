@@ -66,7 +66,7 @@ const Navbar = () => {
             href="/"
             className="text-2xl font-bold text-primary-custom h-8 scale-110"
           >
-            <Image alt="logo" src={Logo} className="h-full w-full" />
+            <Image alt="logo" src={Logo} className="h-full max-w-fit" />
           </Link>
           <div className="space-x-4">
             {sections.map((section) => (
@@ -95,8 +95,8 @@ const Navbar = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-primary-custom h-8">
-            <Image alt="logo" src={Logo} className="h-full w-full" />
+          <Link href="/" className="text-2xl font-bold text-primary-custom h-8 scale-110">
+            <Image alt="logo" src={Logo} className="h-full max-w-fit" />
           </Link>
 
           <button onClick={toggleMenu} aria-label="Toggle Menu">
