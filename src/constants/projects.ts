@@ -11,7 +11,7 @@ export const projects: Project[] = [
     image: "/assets/linkedin-thumbnail.png",
     github: "https://github.com/SyedAzlanzar",
     appearance: "Private",
-    videoUrl: "/assets/linkedin-extension.webm",
+    videoUrl: "/assets/linkedin-extension.mp4",
     techStack: [
       "Manifest 3",
       "React",
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     image: "/assets/mauritius-thumbnail.png",
     github: "https://github.com/SyedAzlanzar",
     appearance: "Private",
-    videoUrl: "/assets/mauritius.webm",
+    videoUrl: "/assets/mauritius.mp4",
     techStack: ["Next.js", "Nest.js", "MUI", "Typescript", "Axios"],
   },
   {
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     image: "/assets/voterconnect-thumbnail.png",
     github: "https://github.com/SyedAzlanzar",
     appearance: "Private",
-    videoUrl: "/assets/voterconnect.webm",
+    videoUrl: "/assets/voterconnect.mp4",
     techStack: ["Next.js", "Nest.js", "MUI", "Typescript", "Axios"],
   },
   {
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     github: "https://github.com/SyedAzlanzar",
     demo: "https://ybudget.com",
     appearance: "Private",
-    videoUrl: "/assets/ybudget.webm",
+    videoUrl: "/assets/ybudget.mp4",
     techStack: ["Next.js", "Shadcn", "Typescript", "Strapi"],
   },
 ];

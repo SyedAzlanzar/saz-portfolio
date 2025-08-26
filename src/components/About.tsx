@@ -71,7 +71,7 @@ const About = () => {
                 {skills.map((skill, index) => (
                   <motion.div
                     key={`${skill.name}-${index}`}
-                    className="flex flex-col items-center border rounded-md p-2 py-3 cursor-pointer"
+                    className="flex flex-col  justify-center items-center border rounded-md p-2 py-3 cursor-default"
                     whileHover={{
                       scale: 1.05,
                       rotate: [0, -1, 1, 0],
