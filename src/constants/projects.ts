@@ -2,6 +2,41 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    id: "CL4V9E2X",
+    name: "CoverCraft",
+    tagline:
+      "Generate tailored cover letters instantly while applying for jobs on LinkedIn.",
+    description:
+      "CoverCraft is a Chrome Extension designed to simplify the job application process. Focused on LinkedIn job applications, it leverages AI to generate professional cover letters on the fly. No more wasting time formatting, downloading, or copy-pasting. This extension handles it all in a clean, ready-to-use layout. Built with NestJS and MongoDB on the backend, and powered by Python + Hugging Face models as the AI service, it provides a smooth and efficient workflow for applicants. A personal project born out of necessity, it may not be flawless, but it works, and it saves precious time.",
+    image: "/assets/cover-craft.png",
+    github: "https://github.com/SyedAzlanzar",
+    appearance: "Private",
+    videoUrl: "/assets/cover-craft.mp4",
+    techStack: [
+      "Manifest V3",
+      "React",
+      "Vite",
+      "TypeScript",
+      "NestJS",
+      "MongoDB",
+      "Python",
+      "Hugging Face"
+    ],
+  },
+  {
+    id: "VT4Y5Z6C",
+    name: "Virtual Tourism Manager",
+    tagline:
+      "Empower virtual tourism with seamless content management. Shape unforgettable travel experiences from behind the scenes.",
+    description:
+      "The Virtual Tourism Manager is a powerful admin dashboard that drives a mobile application designed to provide virtual assistance to tourists. This comprehensive management system allows administrators to curate and control various aspects of the tourist experience, including tours, tour stops, amenities, and recommended items to bring. By centralizing the management of these elements, the dashboard ensures that the mobile app always presents up-to-date and relevant information to users, enhancing their travel experience and making virtual tourism more engaging and informative.",
+    image: "/assets/mauritius-thumbnail.png",
+    github: "https://github.com/SyedAzlanzar",
+    appearance: "Private",
+    videoUrl: "/assets/mauritius.mp4",
+    techStack: ["Next.js", "Nest.js", "MUI", "Typescript", "Axios"],
+  },
+  {
     id: "LP1X2A3B",
     name: "RecruitPro",
     tagline:
@@ -22,19 +57,7 @@ export const projects: Project[] = [
       "Mongodb",
     ],
   },
-  {
-    id: "VT4Y5Z6C",
-    name: "Virtual Tourism Manager",
-    tagline:
-      "Empower virtual tourism with seamless content management. Shape unforgettable travel experiences from behind the scenes.",
-    description:
-      "The Virtual Tourism Manager is a powerful admin dashboard that drives a mobile application designed to provide virtual assistance to tourists. This comprehensive management system allows administrators to curate and control various aspects of the tourist experience, including tours, tour stops, amenities, and recommended items to bring. By centralizing the management of these elements, the dashboard ensures that the mobile app always presents up-to-date and relevant information to users, enhancing their travel experience and making virtual tourism more engaging and informative.",
-    image: "/assets/mauritius-thumbnail.png",
-    github: "https://github.com/SyedAzlanzar",
-    appearance: "Private",
-    videoUrl: "/assets/mauritius.mp4",
-    techStack: ["Next.js", "Nest.js", "MUI", "Typescript", "Axios"],
-  },
+
   {
     id: "EM1G2H3I",
     name: "Election Matching System",

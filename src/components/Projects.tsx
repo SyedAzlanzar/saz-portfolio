@@ -35,7 +35,7 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               <Card className="h-full">
-                <CardHeader className="w-full  h-60 md:h-80">
+                <CardHeader className="w-full h-60 md:h-80">
                   <Image
                     src={project.image}
                     alt={project.name}
