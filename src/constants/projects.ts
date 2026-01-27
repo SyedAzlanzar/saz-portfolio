@@ -30,7 +30,7 @@ export const projects: Project[] = [
     description: "Complete end-to-end Python data analysis and machine learning pipeline analyzing 484 affordable housing projects built in Philadelphia from 1994–2024. Used pandas for comprehensive data cleaning and exploratory analysis, tracking total units produced by fiscal year, project type (Rental/Homeownership/Special Needs), and top developers. Generated professional visualizations with seaborn/matplotlib showing production trends and accessibility growth. Built scikit-learn LogisticRegression classifier predicting project size categories (small/medium/large) achieving 75%+ accuracy on test set, demonstrating full ML workflow from preprocessing to evaluation.",
     image: "/assets/affordable-housing-analysis-python.jpg",
     github: "https://github.com/SyedAzlanzar/affordable-housing-analysis-python",
-    demo: "",
+    demo: "https://github.com/SyedAzlanzar/affordable-housing-analysis-python",
     appearance: "Public",
     videoUrl: "",
     techStack: [
