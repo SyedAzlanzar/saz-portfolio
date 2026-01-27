@@ -59,7 +59,7 @@ const Projects = () => {
                   <Link href={project.github} target="_blank">
                     <Button variant="outline">GitHub</Button>
                   </Link>
-                  {project.videoUrl && (
+                  {(project.videoUrl || project.demo) && (
                     <Link href={`/projects/${project.id}`}>
                       <Button variant="outline">View Demo</Button>
                     </Link>

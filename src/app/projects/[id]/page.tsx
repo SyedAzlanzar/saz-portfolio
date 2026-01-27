@@ -25,7 +25,7 @@ export default function ProjectDetails() {
   // const routeBack = () => router.replace("/");
   const safeBack = () => {
     if (typeof window !== "undefined") {
-      if (window.history.length >2) {
+      if (window.history.length > 2) {
         router.back();
       } else {
         router.replace("/");
@@ -52,17 +52,28 @@ export default function ProjectDetails() {
           </div>
         </CardHeader>
         <CardContent>
-          <video
-            controls
-            autoPlay
-            muted
-            playsInline
-            preload="auto"
-            className="w-full aspect-video mb-4 rounded-lg"
-          >
-            <source src={project.videoUrl} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          {!project.videoUrl && project.image && (
+            <div className="w-full h-60 md:h-80 mb-4 relative">
+              <img
+                src={project.image}
+                alt={project.name}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+          )}
+          {project.videoUrl && (
+            <video
+              controls
+              autoPlay
+              muted
+              playsInline
+              preload="auto"
+              className="w-full aspect-video mb-4 rounded-lg"
+            >
+              <source src={project.videoUrl} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          )}
           <p className="text-muted-foreground md:max-h-auto overflow-y-auto">
             {project.description}
           </p>
