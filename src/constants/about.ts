@@ -59,4 +59,7 @@ export const skills = [
   { name: "Python", icon: FaPython },
   { name: "Chrome Extensions", icon: MdExtension },
   { name: "OpenAI API", icon: AiFillOpenAI },
-];
+  { name: "LLMs", icon: AiFillOpenAI },
+  {name:"Python", icon: FaPython}
+  
+]

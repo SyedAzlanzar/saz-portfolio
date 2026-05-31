@@ -2,6 +2,28 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    id: "PRV7R4G1",
+    name: "PrivRAG",
+    tagline:
+      "Privacy-first, multi-tenant AI RAG platform with automated PII sanitization.",
+    description:
+      "PrivRAG is a robust, privacy-preserving Retrieval-Augmented Generation (RAG) platform built for multi-tenant enterprise environments. Developed as a Master's Thesis project, it ensures strict logical data isolation across different organizations using ChromaDB. The system leverages a custom hybrid NLP masking pipeline (Microsoft Presidio + heuristics) to automatically detect and redact sensitive PII before any data is sent to the Google Gemini LLM. Featuring a Next.js frontend, a NestJS API gateway backed by MongoDB, and a high-performance Python AI microservice, PrivRAG guarantees that data remains secure and compliant without sacrificing AI reasoning capabilities.",
+    image: "/assets/privrag.png",
+    github: "https://github.com/SyedAzlanzar/PrivRag-Backend",
+    appearance: "Public",
+    videoUrl: "",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "NestJS",
+      "MongoDB",
+      "Python",
+      "FastAPI",
+      "ChromaDB",
+      "Google Gemini"
+    ],
+  },
+  {
     id: "CL4V9E2X",
     name: "CoverCraft",
     tagline:
@@ -20,7 +42,29 @@ export const projects: Project[] = [
       "NestJS",
       "MongoDB",
       "Python",
-      "Hugging Face"
+      "OpenAI APIs"
+    ],
+  },
+  {
+    id: "VSC9K2M4",
+    name: "Vector Space ML",
+    tagline:
+      "From-scratch mathematical implementations of core machine learning algorithms.",
+    description:
+      "This project features custom-built Python implementations of fundamental machine learning algorithms—K-Means, DBSCAN, and K-Nearest Neighbors (KNN)—developed without relying on high-level ML libraries. It includes an automated computer vision pipeline that maps image pixels into 3D RGB vector spaces for color-based image segmentation. Equipped with a scalable CLI architecture, the system processes n-dimensional synthetic datasets (2D, 3D, 5D) to prove algorithmic universality and executes rigorous classification benchmarks against complex scientific datasets like Breast Cancer and Iris.",
+    image: "/assets/vectorspacingknn.png",
+    github: "https://github.com/SyedAzlanzar/VectorSpace-Clustering-Classification",
+    appearance: "Public",
+    videoUrl: "",
+    techStack: [
+      "Python",
+      "K-Means",
+      "DBSCAN",
+      "KNN",
+      "Computer Vision",
+      "CLI Architecture",
+      "Mathematics",
+      "Data Visualization"
     ],
   },
   {
@@ -30,7 +74,6 @@ export const projects: Project[] = [
     description: "Complete end-to-end Python data analysis and machine learning pipeline analyzing 484 affordable housing projects built in Philadelphia from 1994–2024. Used pandas for comprehensive data cleaning and exploratory analysis, tracking total units produced by fiscal year, project type (Rental/Homeownership/Special Needs), and top developers. Generated professional visualizations with seaborn/matplotlib showing production trends and accessibility growth. Built scikit-learn LogisticRegression classifier predicting project size categories (small/medium/large) achieving 75%+ accuracy on test set, demonstrating full ML workflow from preprocessing to evaluation.",
     image: "/assets/affordable-housing-analysis-python.jpg",
     github: "https://github.com/SyedAzlanzar/affordable-housing-analysis-python",
-    demo: "https://github.com/SyedAzlanzar/affordable-housing-analysis-python",
     appearance: "Public",
     videoUrl: "",
     techStack: [

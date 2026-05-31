@@ -1,4 +1,3 @@
-import CursorEffect from "@/components/CursorEffect";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -19,7 +18,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning  className="scroll-smooth">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <CursorEffect />
           {children}
         </ThemeProvider>
       </body>
