@@ -56,7 +56,6 @@ export const skills = [
   { name: "MUI", icon: SiMui },
   { name: "Shadcn", icon: SiShadcnui },
   { name: "Stripe", icon: BsStripe },
-  { name: "Python", icon: FaPython },
   { name: "Chrome Extensions", icon: MdExtension },
   { name: "OpenAI API", icon: AiFillOpenAI },
   { name: "LLMs", icon: AiFillOpenAI },
